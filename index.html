@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hệ thống Quản lý Hoạt động Ngoại khóa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+      }
+      .jumbotron {
+        background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#trang-chu">
+          <i class="bi bi-calendar2-event-fill me-2"></i>Extracurricular MS
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#trang-chu"
+                ><i class="bi bi-house-door-fill me-1"></i>Trang Chủ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trang-quan-ly"
+                ><i class="bi bi-gear-fill me-1"></i>Trang Quản Lý</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="trang-chu" class="py-5">
+      <div class="container">
+        <div
+          class="jumbotron p-5 mb-5 rounded-3 shadow-sm text-center text-md-start"
+        >
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h1 class="display-4 fw-bold text-primary">
+                Chào mừng đến với Câu lạc bộ!
+              </h1>
+              <p class="lead fs-4 text-muted mt-3">
+                Nơi kết nối đam mê, rèn luyện kỹ năng sống và lan tỏa những giá
+                trị tích cực thông qua các hoạt động ngoại khóa bùng nổ.
+              </p>
+              <hr class="my-4" />
+              <p>
+                Tham gia ngay hôm nay để tích lũy điểm rèn luyện và làm phong
+                phú hành trình sinh viên của bạn.
+              </p>
+              <a
+                class="btn btn-primary btn-lg px-4 mt-2"
+                href="#trang-quan-ly"
+                role="button"
+              >
+                <i class="bi bi-plus-circle me-2"></i>Thêm Sự Kiện Mới
+              </a>
+            </div>
+            <div class="col-md-4 d-none d-md-block text-center">
+              <i
+                class="bi bi-rocket-takeoff text-primary"
+                style="font-size: 8rem"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-center fw-bold mb-4 text-secondary">
+          <i class="bi bi-images me-2"></i>Hình Ảnh Hoạt Động Tập Thể
+        </h3>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide shadow rounded-3 overflow-hidden"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="https://images.unsplash.com/photo-1523580494863-6f3031224594?q=80&w=1200&auto=format&fit=crop"
+                class="d-block w-100"
+                alt="Sinh hoạt CLB"
+              />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3"
+              >
+                <h5>Buổi Sinh Hoạt Định Kỳ</h5>
+                <p>
+                  Gặp gỡ, giao lưu và định hướng kế hoạch hoạt động tháng mới.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1200&auto=format&fit=crop"
+                class="d-block w-100"
+                alt="Team building"
+              />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3"
+              >
+                <h5>Hoạt Động Team Building</h5>
+                <p>
+                  Thắt chặt tình đoàn kết và nâng cao tinh thần làm việc nhóm.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="https://images.unsplash.com/photo-1559024094-4a1e4495c3c1?q=80&w=1200&auto=format&fit=crop"
+                class="d-block w-100"
+                alt="Chiến dịch tình nguyện"
+              />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3"
+              >
+                <h5>Chiến Dịch Tình Nguyện Mùa Hè</h5>
+                <p>
+                  Chung tay vì cộng đồng và mang lại những giá trị thiết thực.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <hr class="container my-5" />
+
+    <section id="trang-quan-ly" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card shadow border-0">
+              <div class="card-header bg-success text-white py-3">
+                <h3 class="card-title mb-0 fw-bold">
+                  <i class="bi bi-file-earmark-medical me-2"></i>Form Nhập Sự
+                  Kiện Ngoại Khóa
+                </h3>
+              </div>
+              <div class="card-body p-4">
+                <form action="#" method="POST">
+                  <div class="row mb-4">
+                    <h5 class="text-secondary border-bottom pb-2 mb-3">
+                      Thành viên thực hiện
+                    </h5>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label class="form-label fw-bold text-muted"
+                        >Thành viên 1:</label
+                      >
+                      <div class="input-group">
+                        <span class="input-group-text bg-secondary text-white"
+                          ><i class="bi bi-person-fill"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control bg-white"
+                          value="254D4800291 - Hoàng Hồng Phúc"
+                          readonly
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold text-muted"
+                        >Thành viên 2:</label
+                      >
+                      <div class="input-group">
+                        <span class="input-group-text bg-secondary text-white"
+                          ><i class="bi bi-person-fill"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control bg-white"
+                          value="254D4800270 - Đinh Việt Anh"
+                          readonly
+                          disabled
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <h5 class="text-secondary border-bottom pb-2 mb-3">
+                    Thông tin sự kiện
+                  </h5>
+
+                  <div class="mb-3">
+                    <label for="tenSuKien" class="form-label fw-bold"
+                      >Tên sự kiện <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="tenSuKien"
+                      placeholder="Nhập tên sự kiện ngoại khóa..."
+                      required
+                    />
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="diemRenLuyen" class="form-label fw-bold"
+                        >Điểm rèn luyện dự kiến
+                        <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="diemRenLuyen"
+                        min="0"
+                        max="100"
+                        placeholder="Ví dụ: 5, 10, 15..."
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="vaiTro" class="form-label fw-bold"
+                        >Vai trò <span class="text-danger">*</span></label
+                      >
+                      <select class="form-select" id="vaiTro" required>
+                        <option value="" selected disabled>
+                          -- Chọn vai trò --
+                        </option>
+                        <option value="Ban tổ chức">Ban tổ chức</option>
+                        <option value="Cộng tác viên">
+                          Cộng tác viên hỗ trợ
+                        </option>
+                        <option value="Người tham gia">Người tham gia</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="ghiChu" class="form-label fw-bold"
+                      >Ghi chú</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="ghiChu"
+                      rows="4"
+                      placeholder="Nhập các thông tin bổ sung, minh chứng hoặc yêu cầu đặc biệt..."
+                    ></textarea>
+                  </div>
+
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button
+                      type="reset"
+                      class="btn btn-outline-secondary px-4 me-md-2"
+                    >
+                      <i class="bi bi-arrow-counterclockwise me-1"></i>Xóa form
+                    </button>
+                    <button type="submit" class="btn btn-success px-5">
+                      <i class="bi bi-cloud-arrow-up-fill me-1"></i>Lưu sự kiện
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 text-center mt-auto">
+      <div class="container">
+        <p class="mb-1">&copy; 2026 Hệ thống Quản lý Hoạt động Ngoại khóa.</p>
+        <small class="text-muted"
+          >Phát triển bởi nhóm sinh viên hệ thống thông tin.</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
